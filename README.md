@@ -43,27 +43,6 @@ ng serve
 # Acesse no navegador
 http://localhost:4200
 ```
-## 🎨 Personalização
-
-1. **Altere as cores** em `styles.css`:
-```css
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #2c3e50;
-}
-```
-
-2. **Adicione seus posts** em `post.service.ts`:
-```typescript
-private posts: Post[] = [
-  {
-    id: 1,
-    title: 'Meu Primeiro Post',
-    content: 'Conteúdo do post...',
-    /* ... */
-  }
-];
-```
 
 ## 📌 Links Importantes
 
@@ -84,4 +63,3 @@ Contribuições são bem-vindas! Siga estes passos:
 
 Desenvolvido com ❤️ por [Eduardo Mendes](https://github.com/EduardoMFOliveira)  
 
-![Avanade Logo](https://www.avanade.com/-/media/images/logos/avanade-logo.png) <!-- Opcional -->
