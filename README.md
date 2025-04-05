@@ -1,59 +1,87 @@
-# MeuBlogAngular
+# README - Blog Pessoal com Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+![Banner do Projeto](src/assets/images/banner.png) <!-- Opcional -->
 
-## Development server
+## 📝 Sobre o Projeto
 
-To start a local development server, run:
+Blog pessoal desenvolvido como parte do Bootcamp **Decola Tech Avanade 2025**, com:
 
+- Frontend em **Angular** (versão 17+)
+- Arquitetura **Standalone Components**
+- Design responsivo e moderno
+- Sistema completo de posts e navegação
+
+## 🛠️ Tecnologias
+
+### Frontend
+- ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- ![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)
+
+### Ferramentas
+- ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+- ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+- Node.js 18+
+- Angular CLI 17+
+- NPM ou Yarn
+
+### Instalação
 ```bash
+# Clone o repositório
+git clone https://github.com/EduardoMFOliveira/meu-blog-angular.git
+
+# Instale as dependências
+npm install
+
+# Execute o servidor de desenvolvimento
 ng serve
+
+# Acesse no navegador
+http://localhost:4200
+```
+## 🎨 Personalização
+
+1. **Altere as cores** em `styles.css`:
+```css
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+}
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+2. **Adicione seus posts** em `post.service.ts`:
+```typescript
+private posts: Post[] = [
+  {
+    id: 1,
+    title: 'Meu Primeiro Post',
+    content: 'Conteúdo do post...',
+    /* ... */
+  }
+];
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📌 Links Importantes
 
-```bash
-ng generate --help
-```
+🔗 [Meu GitHub](https://github.com/EduardoMFOliveira)  
+🔗 [Meu LinkedIn](https://www.linkedin.com/in/eduardo-mendesfdo/)  
 
-## Building
+## 🤝 Contribuição
 
-To build the project run:
+Contribuições são bem-vindas! Siga estes passos:
 
-```bash
-ng build
-```
+1. Faça um Fork do projeto
+2. Crie uma Branch (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a Branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+Desenvolvido com ❤️ por [Eduardo Mendes](https://github.com/EduardoMFOliveira)  
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![Avanade Logo](https://www.avanade.com/-/media/images/logos/avanade-logo.png) <!-- Opcional -->
