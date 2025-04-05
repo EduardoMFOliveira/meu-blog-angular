@@ -1,0 +1,29 @@
+<section class="about-section">
+    <div class="profile-header">
+      <h1>{{ profile.name }}</h1>
+      <h2>{{ profile.role }}</h2>
+      <p class="bio">{{ profile.bio }}</p>
+      
+      <div class="social-links">
+        <a [href]="profile.links.github" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a [href]="profile.links.linkedin" target="_blank" class="linkedin-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  
+    <div class="decola-tech">
+      <h3>Tecnologias do Decola Tech 2025</h3>
+      
+      <div class="tech-grid">
+        <div class="tech-category" *ngFor="let stack of decolaTechStack | keyvalue">
+          <h4>{{ stack.key | titlecase }}</h4>
+          <ul>
+            <li *ngFor="let tech of stack.value">{{ tech }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>

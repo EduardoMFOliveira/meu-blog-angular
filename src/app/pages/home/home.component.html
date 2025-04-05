@@ -1,0 +1,27 @@
+<section class="hero">
+    <div class="hero-content">
+      <h1>Bem-vindo ao meu Blog</h1>
+      <p class="subtitle">Compartilhando conhecimentos e experiências como desenvolvedor</p>
+      <a routerLink="/sobre" class="cta-button">Conheça minha jornada</a>
+    </div>
+  </section>
+  
+  <section class="featured-posts">
+    <h2>Destaques</h2>
+    <div class="posts-grid">
+      <article *ngFor="let post of featuredPosts" class="post-card">
+        <span class="category-badge">{{ post.category }}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt }}</p>
+        <a [routerLink]="post.link" class="read-more">Ler artigo →</a>
+      </article>
+    </div>
+  </section>
+  
+  <section class="recent-activities">
+    <h2>Atividades Recentes</h2>
+    <ul>
+      <li *ngFor="let activity of recentActivities">{{ activity }}</li>
+    </ul>
+    <a routerLink="/posts" class="see-all">Ver todos os artigos</a>
+  </section>

@@ -1,0 +1,48 @@
+.post-list-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .no-posts {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+  }
+  
+  .post-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .post-card h3 {
+    color: #2c3e50;
+    margin-top: 0;
+  }
+  
+  .excerpt {
+    color: #7f8c8d;
+    margin: 0.5rem 0;
+  }
+  
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #95a5a6;
+    font-size: 0.9rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .read-more {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }

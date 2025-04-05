@@ -1,0 +1,17 @@
+<div class="post-list-container">
+    <h2>Artigos Recentes</h2>
+    
+    <div *ngIf="posts.length === 0" class="no-posts">
+      <p>Nenhum post disponível no momento.</p>
+    </div>
+  
+    <div *ngFor="let post of posts" class="post-card">
+      <h3>{{ post.title }}</h3>
+      <p class="excerpt">{{ post.excerpt }}</p>
+      <div class="post-meta">
+        <span>Por {{ post.author }}</span>
+        <span>{{ post.date | date:'dd/MM/yyyy' }}</span>
+      </div>
+      <a [routerLink]="['/posts', post.id]" class="read-more">Ler mais</a>
+    </div>
+  </div>
