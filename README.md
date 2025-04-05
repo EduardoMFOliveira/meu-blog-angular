@@ -1,7 +1,5 @@
 # README - Blog Pessoal com Angular
 
-![Banner do Projeto](src/assets/images/banner.png) <!-- Opcional -->
-
 ## 📝 Sobre o Projeto
 
 Blog pessoal desenvolvido como parte do Bootcamp **Decola Tech Avanade 2025**, com:
